@@ -22,3 +22,9 @@ George Orwell
 >>> mybook.delete()
 (1, {'bookshelf.Book': 1})
 >>>
+Register the Book Model with the Django Admin:
+        Modify bookshelf/admin.py to include the Book model, enabling admin functionalities for it.
+
+    Customize the Admin Interface:
+        Implement custom configurations to display title, author, and publication_year in the admin list view.
+        Configure list filters and search capabilities to enhance the admin’s usability for Book entries.
