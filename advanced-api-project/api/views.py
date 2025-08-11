@@ -31,7 +31,7 @@ class BookDeleteView(DeleteView):
     success_url = reverse_lazy('book-list')
 
 from rest_framework.generics import CreateAPIView, UpdateAPIView
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 from .serializers import BookSerializer
 from .permissions import IsAdminOrReadOnly
 
